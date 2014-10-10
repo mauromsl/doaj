@@ -6,6 +6,7 @@ also be backed up by models, so have a look at the example models and use them /
 new ones as required too.
 '''
 import os
+import argparse
 
 from flask import request, abort, render_template, redirect, send_file, url_for
 from flask.ext.login import login_user, current_user
@@ -162,17 +163,23 @@ def page_not_found(e):
 @app.errorhandler(401)
 def page_not_found(e):
     return render_template('401.html'), 401
+
+
+def parse_args(args):
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', '--debug', action='store_true')
+    parser.add_argument('--port', type=int)
+    return parser.parse_args(args)
         
 
 if __name__ == "__main__":
-    pycharm_debug = app.config.get('DEBUG_PYCHARM', False)
-    if len(sys.argv) > 1:
-        if sys.argv[1] == '-d':
-            pycharm_debug = True
+    opts = parse_args(sys.argv[1:])  # the path to this file would've been the 1st arg to the interpreter
+    pycharm_debug = opts.debug if opts.debug else app.config.get('DEBUG_PYCHARM', False)
+    port = opts.port if opts.port else app.config['PORT']
 
     if pycharm_debug:
         app.config['DEBUG'] = False
         import pydevd
         pydevd.settrace(app.config.get('DEBUG_PYCHARM_SERVER', 'localhost'), port=app.config.get('DEBUG_PYCHARM_PORT', 6000), stdoutToServer=True, stderrToServer=True)
 
-    app.run(host='0.0.0.0', debug=app.config['DEBUG'], port=app.config['PORT'])
+    app.run(host='0.0.0.0', debug=app.config['DEBUG'], port=port)
