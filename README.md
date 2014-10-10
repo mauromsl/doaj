@@ -39,6 +39,16 @@ Install pip using [pip's very robust instructions](http://www.pip-installer.org/
     pip install -r requirements.txt  # install all the app's dependencies
     python portality/app.py  # the output of this will tell you which port it's running on and whether it's in debug mode
 
+## Testing
+We have unit and integration tests. The integration tests use cucumber (behave python lib) with selenium.
+
+From the root of the repo, run
+
+    nosetests doajtest/unit  # add -v after the nose command to see the name of each test
+    behave doajtest/features
+
+There are some custom integration tests (stress tests and a couple of misc ones) under doajtest/functional . These are not designed to run regularly and are thus not maintained that well, you may find they're broken.
+
 ### Cron Jobs
 
 The following tasks need to run periodically:
