@@ -248,6 +248,8 @@ class SuggestionFormXWalk(JournalGenericXWalk):
         if interpret_special(form.waiver_policy.data):
             bibjson.add_url(form.waiver_policy_url.data, 'waiver_policy')
 
+        bibjson.set_article_publication_dates(interpret_special(form.article_publication_dates.data))
+
         # checkboxes
         if interpret_special(form.digital_archiving_policy.data) or form.digital_archiving_policy_url.data:
             archiving_policies = interpret_special(form.digital_archiving_policy.data)
@@ -454,6 +456,7 @@ class SuggestionFormXWalk(JournalGenericXWalk):
         forminfo['waiver_policy_url'] = bibjson.get_single_url(urltype='waiver_policy')
         forminfo['waiver_policy'] = reverse_interpret_special(forminfo['waiver_policy_url'] is not None and forminfo['waiver_policy_url'] != '')
 
+        forminfo["article_publication_dates"] = reverse_interpret_special(bibjson.article_publication_dates)
 
         #archiving_policies = reverse_interpret_special(bibjson.archiving_policy.get('policy', []), field='digital_archiving_policy')
         #substitutions = [
@@ -627,6 +630,8 @@ class JournalFormXWalk(JournalGenericXWalk):
 
         if interpret_special(form.waiver_policy.data):
             bibjson.add_url(form.waiver_policy_url.data, 'waiver_policy')
+
+        bibjson.set_article_publication_dates(interpret_special(form.article_publication_dates.data))
 
         # checkboxes
         if interpret_special(form.digital_archiving_policy.data) or form.digital_archiving_policy_url.data:
@@ -822,6 +827,8 @@ class JournalFormXWalk(JournalGenericXWalk):
 
         forminfo['waiver_policy_url'] = bibjson.get_single_url(urltype='waiver_policy')
         forminfo['waiver_policy'] = reverse_interpret_special(forminfo['waiver_policy_url'] is not None and forminfo['waiver_policy_url'] != '')
+
+        forminfo["article_publication_dates"] = reverse_interpret_special(bibjson.article_publication_dates)
 
         #archiving_policies = reverse_interpret_special(bibjson.archiving_policy.get('policy', []), field='digital_archiving_policy')
         #substitutions = [

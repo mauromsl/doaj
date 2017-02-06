@@ -117,6 +117,7 @@ class BasicJournalInformationRenderer(Renderer):
                 {"submission_charges_currency" : {"class": "input-large"}},
                 {"waiver_policy" : {}},
                 {"waiver_policy_url" : {"class": "input-xlarge"}},
+                {"article_publication_dates" : {}},
                 {
                     "digital_archiving_policy" : {
                         "extra_input_fields" : {

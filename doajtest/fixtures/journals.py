@@ -104,6 +104,7 @@ JOURNAL_SOURCE = {
             "currency": "USD",
             "average_price": 4
         },
+        "article_publication_dates" : True,
         "archiving_policy": {
             "known" : ["LOCKSS", "CLOCKSS"],
             "other" : "A safe place",
@@ -209,6 +210,7 @@ JOURNAL_INFO = {
     "submission_charges_url" : "http://submission.com",
     "submission_charges_amount": 4,
     "submission_charges_currency": "USD",
+    "article_publication_dates" : "True",
     "waiver_policy": "True",
     "waiver_policy_url": "http://waiver.policy",
     "digital_archiving_policy": ["LOCKSS", "CLOCKSS",
@@ -320,7 +322,8 @@ JOURNAL_APIDO_STRUCT = {
                 "publisher": {"coerce": "unicode"},
                 "submission_charges_url": {"coerce": "url"},
                 "title": {"coerce": "unicode"},
-                "editorial_board_members" : {"coerce" : "unicode"}
+                "editorial_board_members" : {"coerce" : "unicode"},
+                "article_publication_dates" : {"coerce" : "bool"}
             },
             "lists": {
                 "deposit_policy": {"coerce": "deposit_policy", "contains": "field"},

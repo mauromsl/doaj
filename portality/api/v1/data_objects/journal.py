@@ -43,7 +43,8 @@ JOURNAL_STRUCT = {
                 "publisher": {"coerce": "unicode"},
                 "submission_charges_url": {"coerce": "url"},
                 "title": {"coerce": "unicode"},
-                "editorial_board_members" : {"coerce" : "unicode"}
+                "editorial_board_members" : {"coerce" : "unicode"},
+                "article_publication_dates" : {"coerce" : "bool"}
             },
             "lists": {
                 "deposit_policy": {"coerce": "deposit_policy", "contains": "field"},

@@ -250,6 +250,9 @@ class JournalInformation(Form):
     publishing_rights_url = URLField('Enter the URL where this information can be found',
         [OptionalIf('publishing_rights', optvals=Choices.publishing_rights_url_optional()), URLOptionalScheme()]
     )
+    article_publication_dates = RadioField("Does the publisher provide publication dates on article pages?",
+        [validators.DataRequired()],
+        choices=Choices._binary)
 
 
 class JournalInfoOptionalPaymentURLs(JournalInformation):

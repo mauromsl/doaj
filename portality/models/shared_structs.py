@@ -59,7 +59,8 @@ JOURNAL_BIBJSON_EXTENSION = {
                 "author_pays" : {"coerce" : "unicode"},
                 "author_pays_url" : {"coerce" : "unicode"},
                 "discontinued_date" : {"coerce" : "bigenddate"},
-                "editorial_board_members" : {"coerce" : "unicode"}
+                "editorial_board_members" : {"coerce" : "unicode"},
+                "article_publication_dates" : {"coerce" : "bool"}
             },
             "lists" : {
                 "language" : {"contains" : "field", "coerce" : "unicode"},

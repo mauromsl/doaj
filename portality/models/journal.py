@@ -985,6 +985,13 @@ class JournalBibJSON(GenericBibJSON):
     def submission_charges(self):
         return self._get_single("submission_charges", default={})
 
+    @property
+    def article_publication_dates(self):
+        return self._get_single("article_publication_dates")
+
+    def set_article_publication_dates(self, val):
+        self._set_with_struct("article_publication_dates", val)
+
     """
     The below methods work with data stored in this format:
     {
