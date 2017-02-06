@@ -1,6 +1,6 @@
 from doajtest.helpers import DoajTestCase
 from portality import models, reapplication, clcsv
-import os, time, uuid
+import os, time, uuid, unittest
 from doajtest.fixtures import ApplicationFixtureFactory
 from copy import deepcopy
 from portality.formcontext import xwalk, forms
@@ -218,6 +218,7 @@ def mock_account_pull(cls, username, *arsg, **kwargs):
         return None
     return models.Account(**{"id" : username, "email" : "richard@cottagelabs.com"})
 
+@unittest.skip("Reapplication tests are no longer relevant, will need to be updated when we come around to an ongoing update process")
 class TestReApplication(DoajTestCase):
 
     def setUp(self):

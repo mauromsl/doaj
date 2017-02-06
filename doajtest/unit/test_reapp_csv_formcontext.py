@@ -1,6 +1,6 @@
 from doajtest.helpers import DoajTestCase
 
-import re
+import unittest
 from copy import deepcopy
 
 from portality import models
@@ -250,13 +250,14 @@ del REAPPLICATION_FORM["confirm_contact_email"]
 # Main test class
 ######################################################
 
-class TestPublisherReApplication(DoajTestCase):
+@unittest.skip("Reapplication tests are no longer relevant, will need to be updated when we come around to an ongoing update process")
+class TestReApplicationCSVFormContext(DoajTestCase):
 
     def setUp(self):
-        super(TestPublisherReApplication, self).setUp()
+        super(TestReApplicationCSVFormContext, self).setUp()
 
     def tearDown(self):
-        super(TestPublisherReApplication, self).tearDown()
+        super(TestReApplicationCSVFormContext, self).tearDown()
 
 
     ###########################################################

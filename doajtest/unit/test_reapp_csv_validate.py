@@ -3,6 +3,7 @@ from portality.clcsv import ClCsv
 from portality import reapplication, models
 from copy import deepcopy
 import os, csv
+import unittest
 
 APPLICATION_SOURCE = {
     "bibjson" : {
@@ -209,6 +210,7 @@ def find_conditional_by_issn(cls, *args, **kwargs):
     del source["admin"]["contact"][0]["email"]
     return [models.Suggestion(**source)]
 
+@unittest.skip("TestReAppCsv skipping due to obsolete functionality.  May need to be re-instated/updated when update procedures are introduced.")
 class TestReAppCsv(DoajTestCase):
 
     def setUp(self):

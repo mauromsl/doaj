@@ -1,7 +1,7 @@
 from doajtest.helpers import DoajTestCase
 from doajtest.fixtures import JournalFixtureFactory, ApplicationFixtureFactory
 
-import re, time
+import time
 from copy import deepcopy
 
 from portality import models
@@ -32,6 +32,7 @@ def mock_lookup_code(code):
     if code == "HB1-3840": return "Economic theory. Demography"
     return None
 
+"""
 #####################################################################
 # Source objects to be used for testing
 #####################################################################
@@ -289,6 +290,11 @@ for n in notes:
     APPLICATION_FORM[notekey] = n.get("note")
     APPLICATION_FORM[datekey] = n.get("date")
     i += 1
+"""
+
+APPLICATION_SOURCE = ApplicationFixtureFactory.make_application_source()
+JOURNAL_SOURCE = JournalFixtureFactory.make_journal_source(in_doaj=True)
+APPLICATION_FORM = ApplicationFixtureFactory.make_application_form()
 
 ######################################################
 # Main test class

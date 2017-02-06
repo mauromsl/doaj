@@ -48,6 +48,7 @@ BASE_APPLICATION_STRUCT = {
                 "publisher": {"coerce": "unicode"},
                 "submission_charges_url": {"coerce": "url"},
                 "title": {"coerce": "unicode"},
+                "editorial_board_members" : {"coerce" : "unicode"}
             },
             "lists": {
                 "deposit_policy": {"coerce": "deposit_policy", "contains": "field"},

@@ -110,6 +110,7 @@ JOURNAL_SOURCE = {
             "nat_lib" : "Trinity",
             "url": "http://digital.archiving.policy"
         },
+        "editorial_board_members" : "Editorial Board Names and Addresses",
         "editorial_review": {
             "process": "Open peer review",
             "url": "http://review.process"
@@ -226,6 +227,7 @@ JOURNAL_INFO = {
     "keywords": ["word", "key"],
     "languages": ["EN", "FR"],
     "editorial_board_url": "http://editorial.board",
+    "editorial_board_members" : "Editorial Board Names and Addresses",
     "review_process": "Open peer review",
     "review_process_url": "http://review.process",
     "aims_scope_url": "http://aims.scope",
@@ -318,6 +320,7 @@ JOURNAL_APIDO_STRUCT = {
                 "publisher": {"coerce": "unicode"},
                 "submission_charges_url": {"coerce": "url"},
                 "title": {"coerce": "unicode"},
+                "editorial_board_members" : {"coerce" : "unicode"}
             },
             "lists": {
                 "deposit_policy": {"coerce": "deposit_policy", "contains": "field"},

@@ -1,7 +1,7 @@
 from doajtest.helpers import DoajTestCase
 # from flask.ext.testing import TestCase
 
-import re
+import re, unittest
 from copy import deepcopy
 
 from portality import models
@@ -9,6 +9,9 @@ from portality.formcontext import formcontext
 
 from werkzeug.datastructures import MultiDict
 
+from doajtest.fixtures import ApplicationFixtureFactory
+
+"""
 #####################################################################
 # Source objects to be used for testing
 #####################################################################
@@ -243,6 +246,13 @@ REAPPLICATION_FORMINFO.update(deepcopy(SUGGESTION))
 
 REAPPLICATION_FORM = deepcopy(REAPPLICATION_FORMINFO)
 REAPPLICATION_FORM["keywords"] = ",".join(REAPPLICATION_FORM["keywords"])
+"""
+
+REAPPLICATION_SOURCE = ApplicationFixtureFactory.make_application_source()
+REAPPLICATION_FORM = ApplicationFixtureFactory.make_application_form()
+
+REAPPLICATION_SOURCE["admin"]["application_status"] = "reapplication"
+
 del REAPPLICATION_FORM["pissn"]
 del REAPPLICATION_FORM["eissn"]
 del REAPPLICATION_FORM["contact_name"]
@@ -253,6 +263,7 @@ del REAPPLICATION_FORM["confirm_contact_email"]
 # Main test class
 ######################################################
 
+@unittest.skip("Reapplication tests are no longer relevant, will need to be updated when we come around to an ongoing update process")
 class TestPublisherReApplication(DoajTestCase):
 
     def setUp(self):
