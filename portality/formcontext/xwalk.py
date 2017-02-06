@@ -38,6 +38,8 @@ def interpret_special(val):
             return False
         elif val.lower() == Choices.NONE.lower():
             return None
+        elif val.lower() == Choices.NA.lower():
+            return None
         elif val == Choices.digital_archiving_policy_val("none"):
             return None
 
@@ -52,11 +54,11 @@ def interpret_special(val):
 
     return val
 
-def reverse_interpret_special(val, field=''):
+def reverse_interpret_special(val, field='', interpret_none_as=Choices.NONE):
     # if you modify this, make sure to modify interpret_special as well
 
     if val is None:
-        return Choices.NONE
+        return interpret_none_as
     elif val is True:
         return Choices.TRUE
     elif val is False:

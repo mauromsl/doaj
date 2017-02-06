@@ -6,10 +6,17 @@ class Choices(object):
     TRUE = 'True'
     FALSE = 'False'
     OTHER = 'Other'
+    NA = "N/A"
 
     _binary = [
         (TRUE, "Yes"),
         (FALSE, "No")
+    ]
+
+    _binary_na = [
+        (TRUE, "Yes"),
+        (FALSE, "No"),
+        (NA, "N/A")
     ]
 
     _ternary = [
@@ -114,6 +121,10 @@ class Choices(object):
         return cls._binary
 
     @classmethod
+    def binary_na(cls):
+        return cls._binary_na
+
+    @classmethod
     def ternary(cls):
         return cls._ternary
 
@@ -193,6 +204,7 @@ class Choices(object):
 
     @classmethod
     def waiver_policy(cls):
+        # return cls.binary_na()
         return cls.binary()
 
     @classmethod
