@@ -1059,6 +1059,13 @@ class JournalBibJSON(GenericBibJSON):
 
         return ret
 
+    @property
+    def editorial_board_members(self):
+        return self._get_single("editorial_board_members")
+
+    def set_editorial_board_members(self, val):
+        self._set_with_struct("editorial_board_members", val)
+
     def set_editorial_review(self, process, review_url):
         self._set_with_struct("editorial_review.process", process)
         self._set_with_struct("editorial_review.url", review_url)

@@ -150,6 +150,7 @@ class BasicJournalInformationRenderer(Renderer):
 
             "editorial_process" : [
                 {"editorial_board_url" : {"class": "input-xlarge"}},
+                {"editorial_board_members" : {"class": "input-xlarge"}},
                 {"review_process" : {}},
                 {"review_process_url" : {"class": "input-xlarge"}},
                 {"aims_scope_url" : {"class": "input-xlarge"}},

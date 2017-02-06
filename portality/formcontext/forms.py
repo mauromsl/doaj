@@ -167,6 +167,8 @@ class JournalInformation(Form):
         [validators.DataRequired(), URLOptionalScheme()],
         description = 'A journal must have an editor and an editorial board. Only in the case of Arts and Humanities journals we will accept a form of editorial review using only two editors and no editorial board. Where an editorial board present, at least 5 of its members must be clearly identifiable with their affiliation information.'
     )
+    editorial_board_members = TextAreaField("Please detail Editorial Board member names, email addresses and affiliation information",
+        [validators.DataRequired()])
     review_process = DOAJSelectField('Please select the review process for papers',
         [validators.DataRequired()],
         choices = Choices.review_process(),

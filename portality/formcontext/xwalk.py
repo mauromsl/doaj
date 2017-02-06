@@ -283,6 +283,7 @@ class SuggestionFormXWalk(JournalGenericXWalk):
             bibjson.set_language(form.languages.data)  # select multiple field - gives a list back
 
         bibjson.add_url(form.editorial_board_url.data, urltype='editorial_board')
+        bibjson.set_editorial_board_members(form.editorial_board_members.data)
 
         if form.review_process.data or form.review_process_url.data:
             bibjson.set_editorial_review(form.review_process.data, form.review_process_url.data)
@@ -509,6 +510,7 @@ class SuggestionFormXWalk(JournalGenericXWalk):
         forminfo['languages'] = bibjson.language
 
         forminfo['editorial_board_url'] = bibjson.get_single_url('editorial_board')
+        forminfo['editorial_board_members'] = bibjson.editorial_board_members
 
         forminfo['review_process'] = bibjson.editorial_review.get('process')
         forminfo['review_process_url'] = bibjson.editorial_review.get('url')
