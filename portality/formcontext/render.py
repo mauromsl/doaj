@@ -278,7 +278,7 @@ class ApplicationRenderer(BasicJournalInformationRenderer):
 
         self.insert_field_after(
             field_to_insert={"articles_last_year" : {"class": "input-mini"}},
-            after_this_field="submission_charges_currency",
+            after_this_field="waiver_policy_url",
             field_group="basic_info"
         )
         self.insert_field_after(

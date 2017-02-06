@@ -184,14 +184,14 @@ class JournalInformation(Form):
     instructions_authors_url = URLField("What is the URL for the journal's instructions for authors?",
         [validators.DataRequired(), URLOptionalScheme()]
     )
-    plagiarism_screening = RadioField('Does the journal have a policy of screening for plagiarism?',
+    plagiarism_screening = RadioField('Does the journal actively check for plagiarism?',
         [validators.DataRequired()],
-        description = 'If "No" proceed to question 43.',
+        description = 'If "No" proceed to question 44.',
         choices = Choices.plagiarism_screening()
     )
     plagiarism_screening_url = URLField("Enter the URL where this information can be found",
         [OptionalIf('plagiarism_screening', optvals=Choices.plagiarism_screening_url_optional()), URLOptionalScheme()],
-        description="The URL should state that the journal actively checks for plagiarism and detail how this is done."
+        description="Describe how this is done, including any use of automated software"
     )
     publication_time = IntegerField('What is the average number of weeks between submission and publication?',
         [validators.DataRequired(), validators.NumberRange(min=0, max=53)]

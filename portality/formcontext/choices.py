@@ -206,8 +206,10 @@ class Choices(object):
 
     @classmethod
     def waiver_policy(cls):
-        # return cls.binary_na()
-        return cls.binary()
+        return [
+            (cls.TRUE, "Yes"),
+            (cls.FALSE, "No/Not Applicable")
+        ]
 
     @classmethod
     def waiver_policy_url_optional(cls):
