@@ -133,7 +133,7 @@ class JournalInformation(Form):
     )
     article_identifiers_other = StringField('',
     )
-    download_statistics = RadioField('Does the journal provide article download statistics?',
+    download_statistics = RadioField('Are download statistics displayed publicly for each article?',
         [validators.DataRequired()],
         description = 'If "No" proceed to question 32.',
         choices = Choices.download_statistics()
@@ -156,7 +156,7 @@ class JournalInformation(Form):
     )
     keywords = TagListField('Add keyword(s) that best describe the journal (comma delimited)',
         [validators.DataRequired(), MaxLen(6, message='You can only enter up to {max_len} keywords.')],
-        description='Maximum 6. Keywords must be in English.'
+        description='Maximum 6. Keywords must be in English and in lower case.'
     )
     languages = DOAJSelectMultipleField('Select the language(s) that the Full Text of the articles is published in',
         [validators.DataRequired()],
