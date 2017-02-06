@@ -27,21 +27,21 @@ class Choices(object):
 
     _digital_archiving_policy = [
         ("No policy in place", "No policy in place"),
-        ('LOCKSS', 'LOCKSS'),
-        ('CLOCKSS', 'CLOCKSS'),
-        ('Portico', 'Portico'),
-        ("CINES", "CINES"),
-        ("PKP PLN", "PKP PLN"),
-        ('PMC/Europe PMC/PMC Canada', 'PMC/Europe PMC/PMC Canada'),
+        ('LOCKSS', '<a href="https://www.lockss.org/" target="_blank">LOCKSS</a>'),
+        ('CLOCKSS', '<a href="https://www.clockss.org/clockss/Home" target="_blank">CLOCKSS</a>'),
+        ('Portico', '<a href="http://www.portico.org/digital-preservation/" target="_blank">Portico</a>'),
+        ("CINES", '<a href="https://www.cines.fr/" target="_blank">CINES</a>'),
+        ("PKP PLN", '<a href="https://pkp.sfu.ca/pkp-lockss/" target="_blank">PKP PLN</a>'),
+        ('PMC/Europe PMC/PMC Canada', '<a href="https://www.ncbi.nlm.nih.gov/pmc/" target="_blank">PMC</a>/<a href="http://europepmc.org/" target="_blank">Europe PMC</a>/<a href="http://pubmedcentralcanada.ca/pmcc/" target="_blank">PMC Canada</a>'),
         ('A national library', 'A national library'),
         (OTHER, OTHER)
     ]
 
     _article_identifiers = [
         (NONE, NONE),
-        ('DOI', 'DOI'),
-        ('Handles', 'Handles'),
-        ('ARK', 'ARK'),
+        ('DOI', '<a href="https://www.doi.org/" target="_blank">DOI</a>'),
+        ('Handles', '<a href="http://www.handle.net/" target="_blank">Handles</a>'),
+        ('ARK', '<a href="https://confluence.ucop.edu/display/Curation/ARK" target="_blank">ARK</a>'),
         (OTHER, OTHER)
     ]
 
@@ -76,10 +76,10 @@ class Choices(object):
 
     _deposit_policy = [
         (NONE, NONE),
-        ('Sherpa/Romeo', 'Sherpa/Romeo'),
-        ('Dulcinea', 'Dulcinea'),
+        ('Sherpa/Romeo', '<a href="http://www.sherpa.ac.uk/romeo/index.php" target="_blank">Sherpa/Romeo</a>'),
+        ('Dulcinea', '<a href="http://www.accesoabierto.net/dulcinea/" target="_blank">Dulcinea</a>'),
         ('H\xc3\xa9lo\xc3\xafse'.decode('utf-8'), 'H\xc3\xa9lo\xc3\xafse'.decode('utf-8')),
-        ('Diadorim', 'Diadorim'),
+        ('Diadorim', '<a href="http://diadorim.ibict.br" target="_blank">Diadorim</a>'),
         (OTHER, OTHER)
     ]
 
