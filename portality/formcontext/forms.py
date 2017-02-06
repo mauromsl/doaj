@@ -220,7 +220,7 @@ class JournalInformation(Form):
         widget=widgets.ListWidget(prefix_label=False),
     )
     license_url = URLField("Enter the URL on your site where your license terms are stated",
-        [validators.Optional(), URLOptionalScheme()]
+        [validators.DataRequired(), URLOptionalScheme()]
     )
     open_access = RadioField("Does the journal allow readers to <em>read, download, copy, distribute, print, search, or link to the full texts of its articles</em> and allow readers to <em>use them for any other lawful purpose</em>?",
         [validators.DataRequired()],
