@@ -83,7 +83,8 @@ JOURNAL_SOURCE = {
             {"type": "aims_scope", "url": "http://aims.scope"},
             {"type": "author_instructions",
              "url": "http://author.instructions.com"},
-            {"type": "oa_statement", "url": "http://oa.statement"}
+            {"type": "oa_statement", "url": "http://oa.statement"},
+            {"type" : "fulltext_indexing", "url" : "http://ftu.com"}
         ],
         "subject": [
             {"scheme": "LCC", "term": "Economic theory. Demography",
@@ -219,6 +220,7 @@ JOURNAL_INFO = {
     "digital_archiving_policy_library": "Trinity",
     "digital_archiving_policy_url": "http://digital.archiving.policy",
     "crawl_permission": "True",
+    "crawl_permission_url" : "http://ftu.com",
     "article_identifiers": ["DOI", "ARK", "Other"],
     "article_identifiers_other": "PURL",
     "download_statistics": "True",

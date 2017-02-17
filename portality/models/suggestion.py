@@ -205,7 +205,8 @@ APPLICATION_STRUCT = {
                 "continued" : {"coerce" : "unicode"},
                 "application_type": {"coerce": "unicode"},
                 "has_editor_group" : {"coerce" : "unicode"},
-                "has_editor" : {"coerce" : "unicode"}
+                "has_editor" : {"coerce" : "unicode"},
+                "fulltext_indexing_url" : {"coerce" : "unicode"}
             },
             "lists" : {
                 "issn" : {"contains" : "field", "coerce" : "unicode"},

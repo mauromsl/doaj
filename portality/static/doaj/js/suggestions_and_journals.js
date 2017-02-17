@@ -106,6 +106,7 @@ jQuery(document).ready(function($) {
     };
     
     toggle_optional_field('waiver_policy', ['#waiver_policy_url']);
+    toggle_optional_field('crawl_permission', ['#crawl_permission_url']);
     toggle_optional_field('download_statistics', ['#download_statistics_url']);
     toggle_optional_field('plagiarism_screening', ['#plagiarism_screening_url']);
     toggle_optional_field('publishing_rights', ['#publishing_rights_url'], ["True"]);

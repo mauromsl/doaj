@@ -252,6 +252,9 @@ class Choices(object):
     def crawl_permission(cls):
         return cls.binary()
 
+    @classmethod
+    def crawl_permission_url_optional(cls):
+        return [cls.FALSE]
 
     @classmethod
     def article_identifiers(cls):

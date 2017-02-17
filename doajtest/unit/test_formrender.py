@@ -156,7 +156,7 @@ class TestRender(DoajTestCase):
                 field = obj.keys()[0]
                 assert obj[field].get("q_num") == str(q), (field, obj[field].get("q_num"), q)
                 q += 1
-        assert q == 61, q # checks that we checked everything (60 questions, plus an extra 1 from the end of the loop)
+        assert q == 62, q # checks that we checked everything (61 questions, plus an extra 1 from the end of the loop)
 
         # try setting some error fields
         r.set_error_fields(["publisher", "copyright_url"])
@@ -175,7 +175,7 @@ class TestRender(DoajTestCase):
                 else:
                     assert not obj[field].get("first_error", False)
                 q += 1
-        assert q == 61 # makes sure we've checked all the fields (60 questions, plus an extra 1 from the end of the loop)
+        assert q == 62 # makes sure we've checked all the fields (61 questions, plus an extra 1 from the end of the loop)
 
     def test_05_insert_fields(self):
         r = TestRenderer()

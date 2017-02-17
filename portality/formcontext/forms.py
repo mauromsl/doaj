@@ -121,9 +121,12 @@ class JournalInformation(Form):
         [OptionalIf('digital_archiving_policy', optvals=Choices.digital_archiving_policy_url_optional()), URLOptionalScheme()],
         description='This field is optional if you selected "No policy in place".',
     )
-    crawl_permission = RadioField('Does the journal allow software/spiders to automatically crawl the journal content (also known as text mining)?',
+    crawl_permission = RadioField('Text & Data Mining (TDM): Does the journal allow anyone to use software/spiders to automatically crawl and extract the journal content?',
         [validators.DataRequired()],
         choices = Choices.crawl_permission()
+    )
+    crawl_permission_url = URLField('Enter the URL where the TDM information can be found',
+        [OptionalIf('crawl_permission', optvals=Choices.crawl_permission_url_optional()), URLOptionalScheme()]
     )
     article_identifiers = DOAJSelectMultipleField('Which article identifiers does the journal use?',
         [validators.DataRequired(), ExtraFieldRequiredIf('article_identifiers_other', reqval=Choices.article_identifiers_val("other")), ExclusiveCheckbox()],

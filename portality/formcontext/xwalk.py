@@ -258,7 +258,11 @@ class SuggestionFormXWalk(JournalGenericXWalk):
             bibjson.set_archiving_policy(archiving_policies, form.digital_archiving_policy_url.data)
 
         if form.crawl_permission.data and form.crawl_permission.data != 'None':
-            bibjson.allows_fulltext_indexing = interpret_special(form.crawl_permission.data)  # just binary
+            afi = interpret_special(form.crawl_permission.data)  # just binary
+            bibjson.allows_fulltext_indexing = afi
+            if afi:
+                bibjson.add_url(form.crawl_permission_url.data, "fulltext_indexing")
+
 
         # checkboxes
         article_ids = interpret_special(form.article_identifiers.data)
@@ -491,6 +495,10 @@ class SuggestionFormXWalk(JournalGenericXWalk):
         forminfo['digital_archiving_policy_url'] = bibjson.archiving_policy.get('url')
 
         forminfo['crawl_permission'] = reverse_interpret_special(bibjson.allows_fulltext_indexing)
+        cpu = bibjson.get_single_url("fulltext_indexing")
+        forminfo["crawl_permission_url"] = ""
+        if cpu is not None:
+            forminfo["crawl_permission_url"] = cpu
 
         # checkboxes
         article_ids = reverse_interpret_special(bibjson.persistent_identifier_scheme)
@@ -641,7 +649,10 @@ class JournalFormXWalk(JournalGenericXWalk):
             bibjson.set_archiving_policy(archiving_policies, form.digital_archiving_policy_url.data)
 
         if form.crawl_permission.data and form.crawl_permission.data != 'None':
-            bibjson.allows_fulltext_indexing = interpret_special(form.crawl_permission.data)  # just binary
+            afi = interpret_special(form.crawl_permission.data)  # just binary
+            bibjson.allows_fulltext_indexing = afi
+            if afi:
+                bibjson.add_url(form.crawl_permission_url.data, "fulltext_indexing")
 
         # checkboxes
         article_ids = interpret_special(form.article_identifiers.data)
@@ -863,6 +874,10 @@ class JournalFormXWalk(JournalGenericXWalk):
         forminfo['digital_archiving_policy_url'] = bibjson.archiving_policy.get('url')
 
         forminfo['crawl_permission'] = reverse_interpret_special(bibjson.allows_fulltext_indexing)
+        cpu = bibjson.get_single_url("fulltext_indexing")
+        forminfo["crawl_permission_url"] = ""
+        if cpu is not None:
+            forminfo["crawl_permission_url"] = cpu
 
         # checkboxes
         article_ids = reverse_interpret_special(bibjson.persistent_identifier_scheme)

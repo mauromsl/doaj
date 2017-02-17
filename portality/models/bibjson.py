@@ -15,6 +15,7 @@ class GenericBibJSON(dataobj.DataObj):
     AUTHOR_INSTRUCTIONS = "author_instructions"
     OA_STATEMENT = "oa_statement"
     FULLTEXT = "fulltext"
+    FULLTEXT_INDEXING = "fulltext_indexing"
 
     # constructor
     def __init__(self, bibjson=None):

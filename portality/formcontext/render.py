@@ -128,6 +128,7 @@ class BasicJournalInformationRenderer(Renderer):
                 },
                 {"digital_archiving_policy_url" : {"class": "input-xlarge"}},
                 {"crawl_permission" : {}},
+                {"crawl_permission_url" : {"class": "input-xlarge"}},
                 {
                     "article_identifiers" : {
                         "extra_input_fields": {

@@ -1232,7 +1232,8 @@ JOURNAL_STRUCT = {
                 "has_editor" : {"coerce" : "unicode"},
                 "publisher_ac" : {"coerce" : "unicode"},
                 "institution_ac" : {"coerce" : "unicode"},
-                "provider_ac" : {"coerce" : "unicode"}
+                "provider_ac" : {"coerce" : "unicode"},
+                "fulltext_indexing_url" : {"coerce" : "unicode"}
             },
             "lists" : {
                 "issn" : {"contains" : "field", "coerce" : "unicode"},
