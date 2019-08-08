@@ -164,6 +164,10 @@ class TestCrudArticle(DoajTestCase):
 
         # now test some failures
 
+        '''
+        # TODO: before better solution we don't want invalid url to cause Exception to prevent an error
+        # https://github.com/DOAJ/doajPM/issues/2038
+        
         # an invalid urls
         data = ArticleFixtureFactory.make_article_source()
         data["bibjson"]["link"][0]["url"] = "Two streets down on the left"
@@ -172,6 +176,8 @@ class TestCrudArticle(DoajTestCase):
         data["bibjson"]["link"][0]["url"] = "www.example.com/this_location/here"
         with self.assertRaises(DataStructureException):
             ia = IncomingArticleDO(data)
+
+        '''
 
         # an invalid link type
         data = ArticleFixtureFactory.make_article_source()
