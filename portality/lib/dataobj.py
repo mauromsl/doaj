@@ -1088,7 +1088,10 @@ def construct(obj, struct, coerce, context="", silent_prune=False, maintain_refe
         kwargs = construct_kwargs("field", "set", instructions)
 
         try:
-            constructed._set_single(field_name, val, coerce=coerce_fn, **kwargs)
+            if field_name == 'url':
+                constructed._set_single(field_name, val)
+            else:
+                constructed._set_single(field_name, val, coerce=coerce_fn, **kwargs)
         except DataSchemaException as e:
             raise DataStructureException(u"Schema exception at '{a}', {b}".format(a=context + field_name, b=e.message))
 
