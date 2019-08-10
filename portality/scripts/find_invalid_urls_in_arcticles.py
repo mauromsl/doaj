@@ -5,12 +5,13 @@ import esprit
 import codecs
 
 INVALID_FULLTEXT_URL = {
-    "query": {
-        "query_string": {
-            "default_field": "index.fulltext",
-            "query": "@&~(http.+) "
-        }
+  "query": {
+    "regexp": {
+      "url": {
+        "value": "http.+",
+      }
     }
+  }
 }
 
 if __name__ == "__main__":

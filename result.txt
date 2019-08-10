@@ -1,0 +1,132 @@
+ID,Journal Name,E-ISSN,P-ISSN,Article Count
+64c730af3fa44e5eb2d1a48b0ac35717,Acta Scientiarum Polonorum Agricultura ,,1644-0625,6
+64d429eabf5d43b68871c440d6caf5f9,Journal of Education and Training Studies,2324-8068,2324-805X,5
+64e79f3876ae4737bbdcc35887f8e9a9,Lecturas de Economía,XXXX-XXXX,XXXX-XXXX,7
+64fe813ba65f442ea0d2c62c29e0eb5b,American Journal of Plant Physiology,1557-4547,1557-4539,4
+652e9d15125140d4943254f3ccabc25b,Atmósfera,,0187-6236,6
+655d1638004648bb9d92a5e914850bdd,Journal of Polymers,2314-6877,2356-7570,2
+659cdec7a2de4014b5cfaed793a15046,Fronteras de la Historia,,XXXX-XXXX,7
+659d1b079cc14aed883f93c1a2cd66d6,Journal of Immunotoxicology,XXXX-XXXX,XXXX-XXXX,7
+663b7fa469704fd7b5ffcfd27a7c4104,Journal of Educational and Developmental Psychology,1927-0534,1927-0526,3
+66d2986b3c994124a93565049ae9f755,Revista Cubana de Medicina General Integral,1561-3038,0864-2125,41
+671560eb5b224fcbae0ee62840f8061e,Open Journal of Psychiatry ,2161-7333,2161-7325,3
+6727758966cf437688061197d8cbbb60,Revista de la Asociación Española de Neuropsiquiatría,2340-2733,0211-5735,38
+67303f332d35493e9a7a23803c33da8d,Carnets de Géologie,1634-0744,1765-2553,4
+687062d05ed74e2985ecd3d9a4de11f8,Internet Electronic Journal of Molecular Design,,1538-6414,3
+6875519552874da3b8d41317d70591a3,Anales de la Facultad de Medicina,,1025-5583,18
+6881e3d1d4ae4a0caa8990a8934627a4,Pharmacology & Pharmacy,2157-9431,2157-9423,4
+68b56eb2a1ee4d7c89f918831d1921d7,Holos Environment,,1519-8634,4
+69aad12687954287bc85670416d6eba2,Drug Invention Today,,0975-7619,6
+69c03a51f4ce4d5db0a50df2f9c28e89,Neuropsychiatria i Neuropsychologia ,2084-9885,1896-6764,1
+6a292b26980d4808a46b3317dea84886,Nigerian Medical Journal,2229-774X,0300-1652,6
+6a2a893d6f0d4610821ccaeef4379638,Investigación y Educación en Enfermería,,0120-5307,11
+6aad0a2a9a8e43ff9b4d52e3ca2a9fe3,"Journal of Knowledge Management, Economics and Information Technology",,2069-5934,7
+6bd0f345016047a58d0c42abc455a5f6,Silpakorn University Science and Technology Journal,,1905-9159,1
+6c64febe3afd4113b783b7696c1bd771,Cuadernos de Administración,1900-7205,0120-3592,4
+6c77feb0aba94601ad954e27b4f2a0ec,PVRI Review,0975-1602,0974-6013,1
+6cd5db34e4e1498e86759b545c86ef25,Open Journal of Philosophy,2163-9442,2163-9434,2
+6d0146cd82604238bc63612e0fb851a7,Advances in Theoretical and Applied Mechanics ,1314-7625,1313-6550,4
+6d6f147a63b44a849dd595f2620353e3,Endocrinology Studies,2038-9523,2038-9515,2
+6da91beff3664c14b6246a2cd1987ff5,Skepsi,,1758-2679,2
+6e677006a15b4adcbfda47d89ffb8698,International Journal of Emotional Education,,2073-7629,2
+6e727fd6b466452eb8efa28b759760ea,Notulae Botanicae Horti Agrobotanici Cluj-Napoca,1842-4309,0255-965X,23
+6eca6666109f45a4b5a1fce59951aabd,Evropejskij Medicinskij Žurnal,2310-3434,2308-6513,1
+6f6f289bc0694a4e9b8a78631604d000,HEALTH EXPECTATIONS,XXXX-XXXX,XXXX-XXXX,7
+6f95a3c136314b90ad92c3ffae9de2c1,Nómadas,1578-6730,1889-7231,33
+7013ac259a0646d58ff70561962addc8,Revista Latinoamericana de Psicologí­a,,0120-0534,48
+7027a23e460d469b8de6df8a8e88f4f4,Pratiques et Organisation des Soins,,1952-9201,3
+70c57cc87b784733abe9f4b048fc6984,RETEL : Revista de Toxicología en Línea,,1668-091X,2
+711ae666356f476b99b416734d7a4f67,Open Journal of Stomatology,2160-8717,2160-8709,5
+71654cf78c3840ff8ec78ccc6ea6e821,Cuadernos de Documentación Multimedia,,0000-0000,5
+7173fceab6f9490d9679f8384d31daf2,IUCN Otter Specialist Group Bulletin,,1023-9030,8
+71b597cba98e4e69bd61b179a3cdf76f,Issues in Information Systems,,1529-7314,24
+725b29e5c8294c72acc4b2d06a77a299,Revista Universidad Eafit,,0120-341X,6
+72caf0d812dd46369a29a86c22dd5130,Indian Journal of Community Health,2248-9509,0971-7587,14
+7303fd9abd594522914547a12b8d9269,Scientific Herald of the Voronezh State University of Architecture and Civil Engineering,,2075-0811,2
+73616dd80dbb4ac2b9894d965802c375,Folia Neuropathologica,1509-572X,1641-4640,5
+73ba90a755c24aa68807d1c670530ec9,Educação & Realidade,2175-6236,0100-3143,2
+74198e75e876405880fa8ab6a838e3b7,Actualidades Biológicas,,0304-3584,1
+741ebeea27764e3aa81e48a395dafd48,Temps d'Educació,2014-7627,0214-7351,13
+750f1607fd584baf84583eb20f03d7a7,Current Research Journal of Economic Theory,2042-485X,2042-4841,3
+753bde5b2096472c93cdf8d5bec82918,Leksema,2527-807X,2527-8088,2
+756c9d30b7504bbaaca8896d1b545932,Gaceta Laboral,,1315-8597,4
+7602ee75aa3c4f9f9bdd323b6c31269f,Revista Mexicana de Investigación Educativa,,0000-0000,5
+763bc632b2ad44eab648cb9a8098e0a8,Journal of Solar Energy ,2314-6230,2356-7635,1
+7642d0168c094d95baa5aecefe97b270,Advances in Interventional Cardiology,1897-4295,1734-9338,4
+765cb7a12b07484ab55cc3a037c43421,Acta Societatis Martensis,1736-3926,1736-3918,2
+769792d1592f47daa81d3402cf9b1b26,Prevention and Research : International Open Access Journal of Prevention and Research in Medicine,,2240-2594,3
+76f9e6bc9d1d446e8537e33aa6eedebd,Egyptian Journal of Medical Human Genetics,,1110-8630,11
+77194f025c3a4b3b9bf36ed714eb8dee,E-Journal of Portuguese History,,1645-6432,2
+77875aa3d2fb4d22a576c62ecf252573,Metal-Based Drugs,1687-5486,0793-0291,7
+77ed362cd804465aa34ef5924ae950df,Psikeba : Revista de Psicoanalisis y Estudios Culturales,,1850-339X,1
+7838cd84ac3d4a418b25d89358756ebd,International Journal of Biotechnology Applications,0975-9123,0975-2943,1
+78cf41f7778f4f22b4c13d674fcea6d6,Revista de Derecho Ambiental de la Universidad de Palermo,,2250-8120,1
+79740c30a2274abe9f39b672aeeea013,E-Beratungsjournal,,1816-7632,4
+7995e74895f8420d8a01cd946c14c700,Journal of Science and Cycling,,2254-7053,1
+7ba24c8f55364757b17aae50a8cf58bd,Journal of China and International Relations,,XXXX-XXXX,7
+7ca830a09625401a876745040430f272,Ager : Revista de Estudios Sobre Despoblación y Desarrollo Rural,,1578-7168,3
+7d0619936a7c42a49de6fb2c2d364ae3,Meždunarodnyj Naučno-issledovatelʹskij Žurnal,2227-6017,2303-9868,170
+7d71a3ed001c4c88a43403496e0500f3,International Journal on Computer Science and Engineering,,0975-3397,31
+7eb42cfeaca3490b8914f3357fffcc00,Journal of the Serbian Chemical Society,1820-7421,0352-5139,47
+7ecc021ce2a64ded9346d8e8902f5a93,Nucleus,1982-2278,1678-6602,15
+7f3d3d5d3be94185ba704d7e18d36e40,AGRIS on-line Papers in Economics and Informatics,,1804-1930,6
+7f6a97f208b842d1afd8304b4c0d951a,International Journal of Research in Pharmaceutical Sciences,,0975-7538,4
+7fcbf41559d54c2b81b92084dc2bd023,Open Journal of Nursing  ,2162-5344,2162-5336,2
+803cca9fb0f7424eb7c5221e784c1f00,Journal of Economics and Political Economy,2148-8347,,4
+804989935a2045f090e0fbab854523fc,International Journal of Computer Science & Information Technology,0975-3826,0975-4660,13
+80571f4fea5b4f2c806db5fb2b95797f,Urology Journal,1735-546X,1735-1308,12
+808a1129c10a44f69863e2e7fd4e88ef,Annual Review of the Faculty of Philosophy,2334-7236,0374-0730,2
+80969846c26a4de0b3585f54ff4fd607,Journal of Food Research,1927-0895,1927-0887,6
+80ef48de60b94175a3b563258ef6c692,Journal of the Royal College of Physicians of Edinburgh,XXXX-XXXX,XXXX-XXXX,7
+815da0b25c0d45009b0a26b357442e65,Conference Papers in Engineering,2314-5366,2314-5838,1
+81b75afb87bc427d998cdfeeeb6500f3,African Journal of Urology,,1110-5704,5
+8216a3fff56c49e09454855bb0de7a96,Studies in Literature and Language ,1923-1563,1923-1555,15
+82bf5110be994c1db1e7dd3d11545d98,Journal of Translational Internal Medicine,2224-4018,,1
+82f73710324a4a0d8851da5c2c37784d,Journal of Faculty of Educational Sciences,,1301-3718,9
+8337473c1caa41a282d942160da84cdf,Revista Signos,0718-0934,0035-0451,6
+833c7f99cfd84f02a6d42d5e5bc60174,RSBO,1984-5685,1806-7727,5
+83581b067beb419d9f596196b8c85543,Asian Culture and History,1916-9663,1916-9655,5
+838c4b01c8bb43f3a92dc1e280730048,Proceedings of NAS RA : Mechanics ,,0002-3051,40
+838f8907a0454d8b922deed4201943d3,Alexandría : Revista de Ciencias de la Información,1991-1653,1812-0962,1
+8493656f479c45acba0a72a757f659a2,Análisis Político,,0121-4705,4
+84f66982cb3247aeb29d2c67ff010397,"Aquaculture, Aquarium, Conservation & Legislation",1844-9166,1844-8143,6
+85ac749cbd244ebca1879dbf28c88ea8,E&G : Quaternary Science Journal,,0424-7116,1
+87281f5fedee48599873ea55758d0c6d,Physics Letters B,,XXXX-XXXX,7
+87b2494d267648248d9bd4f42cc92598,Uludağ University Journal of The Faculty of Engineering,2148-4155,,4
+87d4bb21e2c64b91bc1c9f48d8d4cbc5,The Professional Medical Journal ,2071-7733,1024-8919,23
+88f1da7059fe4de68179e9bd1e40ee90,Theologica Xaveriana,,0120-3649,1
+895eff94496e4b53b52622b95b5c79e2,RLA : Revista de Lingüística Teórica y Aplicada,0718-4883,0033-698X,5
+899552a282474d1bba20decda9763040,Caminhando,2176-3828,1519-7018,5
+89e1e01a4f30422a8afe698e4b508857,Medicina Balear,2255-0569,1579-5853,1
+8b2bbf70d41b46d6bc93fe70a3ed599e,Universa Medicina,,1907-3062,11
+8c7a660b90954805a3dbe3de4c97e3b7,Journal of Nanoparticles,2314-4858,2314-484X,2
+8cedca5ef5774286b5fb1de9cd69060a,Periódico Tchê Química,2179-0302,1806-0374,1
+8cf2fc4b78084ae0b7ba11647ac6e900,Papers Lextra,,1885-2785,1
+8cfd8176dbc0403a8a62d392f5513883,Multidisciplinary Journal of Women's Health,,2281-3403,1
+8d2fe5a876cc4401be8330a9746c99f8,Journal of Clinical and Experimental Medical Research,2310-2209,2309-2394,3
+8d5b8643675f469ba4a9fddfd7dffd1b,Buletin Teknik Elektro dan Informatika,2302-9285,2089-3191,6
+8dcd850d9dab44018be4461d9a68cf64,"Scientific Papers of the Research Institute for Fruit Growing Pitesti, Romania",,1584-2231,2
+8df21eb52a5b4441aa303faff6a80b2f,Tendências em Matemática Aplicada e Computacional,XXXX-XXXX,XXXX-XXXX,7
+8f0f7fdededd4f4788b2b60c573b7c24,Revista Cubana de Fisica  ,,0000-0000,5
+8f5e8900ffc7431f856ba063a8f1c64c,Asian Journal of Crop Science,2077-2041,1994-7879,4
+8f888b992ff64056a7e2b743b97ff7a9,International Journal of Population Research,2090-4037,2090-4029,2
+8fd8c7369fd249b48a1b6d04a6d0d392,Biogeosciences Discussions,1810-6285,1810-6277,52
+915e5791192f4f549f9a3c48c221d613,Journal of Encapsulation and Adsorption Sciences,2161-4873,2161-4865,2
+91755a45794449feb5d7a6dea94a30bd,Estudios del Desarrollo Social : Cuba y América Latina,,2308-0132,5
+920cb3f98ac543c18e16554675e9727d,Conference Papers in Mathematics,2314-4777,2314-5854,2
+92a561f629734c74bf37510159385cac,Revista Colombiana de Gastroenterología,,0120-9957,16
+92a7673e0e6a4643a2175d1a43697d67,The Journal of Scholarship of Teaching and Learning,,XXXX-XXXX,7
+9305173a30c447a49431b83bf89a134a,Studii si Cercetări Filologice: Seria Limbi Străine Aplicate,2344-4525,1583-2236,4
+93d6042739094037bfb2c1842cba9b39,Open Journal of Hematology,,2075-907X,1
+9452e129bde7429baa47f53cd7c86b86,Vestnik Kievskogo Politehničeskogo Instituta: Radiotehnika,,0203-6584,31
+9477bf8754014352b2f45c3e120e7645,English Language and Literature Studies,1925-4776,1925-4768,5
+94da4f07e48344b4816172b3e0bb159b,Annals of Surgical Innovation and Research,,1750-1164,1
+95ad4ed758dc45dfa3812febeb615937,REDU : Revista de Docencia Universitaria,,1887-4592,6
+962971bf8b824be4be825a9cd7144586,Construction of Unique Buildings and Structures,,2304-6295,4
+969e4f5d79a343fe935968ef5a1c9101,The Python Papers Monograph,,1837-7092,1
+977bfadf99864e23a10a5ff704c1068a,Journal of Pharmaceutical and Scientific Innovation,,2277-4572,2
+98f1e530150d4d66ae10083ee82ab3fb,Journal of Advanced Scientific Research,,0976-9595,3
+9982d33e902645b1854c11c5bf7c2bb8,Optica Applicata,1899-7015,0078-5466,14
+99933fdbc0514c0c84dd87bdc607c203,Revista de História Regional,,1414-0055,2
+99ab6bd7bb3b499dacc03703b275d7b7,Journal of Animal Production,,1411-2027,9
+359b255cf9be46b198c00388b858bdeb,"Interdisciplinary Journal of Information, Knowledge, and Management",1555-1237,1555-1229,4
