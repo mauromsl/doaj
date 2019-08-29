@@ -69,7 +69,7 @@ SSL = True
 VALID_ENVIRONMENTS = ['dev', 'test', 'staging', 'production', 'harvester']
 
 # elasticsearch settings
-ELASTIC_SEARCH_HOST = "http://localhost:9200" # remember the http:// or https://
+ELASTIC_SEARCH_HOST = ["http://localhost:9200"] # remember the http:// or https://
 ELASTIC_SEARCH_DB = "doaj"
 ELASTIC_SEARCH_TEST_DB = "doajtest"
 INITIALISE_INDEX = True # whether or not to try creating the index and required index types on startup

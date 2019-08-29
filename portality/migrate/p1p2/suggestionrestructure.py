@@ -1,4 +1,4 @@
-from portality import models, settings
+from portality import models, settings, random
 import requests, json, time
 
 # first thing to do is delete suggestions which are marked "waiting for answer"
@@ -13,7 +13,8 @@ q = {
     }
 }
 
-url = settings.ELASTIC_SEARCH_HOST + "/" + settings.ELASTIC_SEARCH_DB + "/suggestion/_query"
+uip = random.choice(settings.ELASTIC_SEARCH_HOST) if isinstance(settings.ELASTIC_SEARCH_HOST,list) else settings.ELASTIC_SEARCH_HOST
+url = uip + "/" + settings.ELASTIC_SEARCH_DB + "/suggestion/_query"
 resp = requests.delete(url, data=json.dumps(q))
 
 time.sleep(5)

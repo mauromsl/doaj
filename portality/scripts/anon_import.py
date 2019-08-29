@@ -1,4 +1,4 @@
-import esprit, codecs, json, gzip, shutil
+import esprit, codecs, json, gzip, shutil, random
 from portality.core import app, initialise_index
 from portality.store import StoreFactory
 from botocore.exceptions import ClientError
@@ -13,6 +13,8 @@ def do_import(config):
     if config.get("elastic_search_db") is not None:
         index = config.get("elastic_search_db")
         app.config["ELASTIC_SEARCH_DB"] = index
+
+    if isinstance(host,list): host = random.choice(host)
 
     print("\n")
     print("Using host {x} and index {y}\n".format(x=host, y=index))

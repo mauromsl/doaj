@@ -16,6 +16,7 @@ import requests
 import sys
 import json
 import time
+import random
 from portality.core import app
 config = app.config
 
@@ -64,8 +65,9 @@ def sync_type(es_type, source_server, destination_server, testing):
         if testing:
             print 'TESTING - would PUT', diff['_id']
         else:
+            uip = random.choice(config['ELASTIC_SEARCH_HOST']) if isinstance(config['ELASTIC_SEARCH_HOST'],list) else config['ELASTIC_SEARCH_HOST']
             r = requests.put(
-                '{es_host}/{es_index}/{es_type}/{rec_id}'.format(es_host=config['ELASTIC_SEARCH_HOST'], es_index=config['ELASTIC_SEARCH_DB'], es_type=es_type, rec_id=diff['_id']),
+                '{es_host}/{es_index}/{es_type}/{rec_id}'.format(es_host=uip, es_index=config['ELASTIC_SEARCH_DB'], es_type=es_type, rec_id=diff['_id']),
                 data=json.dumps(diff['_source'])
             )
             print diff['_id'], r.status_code
