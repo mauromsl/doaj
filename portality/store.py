@@ -4,8 +4,10 @@ from portality.lib import plugin
 import os, shutil, boto3
 from urllib.parse import quote_plus
 
+
 class StoreException(Exception):
     pass
+
 
 class StoreFactory(object):
 
@@ -29,6 +31,7 @@ class StoreFactory(object):
         si = app.config.get("STORE_TMP_IMPL")
         sm = plugin.load_class(si)
         return sm()
+
 
 class Store(object):
 
@@ -125,7 +128,7 @@ class StoreS3(Store):
 
         # FIXME: this has a limit of 1000 keys, which will need to be dealt with at some point soon
         delete_info = {
-            "Objects" : [{"Key" : key} for key in keys]
+            "Objects": [{"Key": key} for key in keys]
         }
 
         self.client.delete_objects(
@@ -151,7 +154,7 @@ class StoreS3(Store):
             return
 
         delete_info = {
-            "Objects" : [{"Key" : target_name}]
+            "Objects": [{"Key": target_name}]
         }
 
         self.client.delete_objects(
@@ -175,7 +178,7 @@ class StoreLocal(Store):
         if source_path:
             shutil.copyfile(source_path, tpath)
         elif source_stream:
-            with open(tpath, "w") as f:
+            with open(tpath, "wb") as f:
                 f.write(source_stream.read())
 
     def exists(self, container_id):
@@ -192,7 +195,7 @@ class StoreLocal(Store):
             kwargs = {}
             mode = "rb"
             if encoding is not None:
-                kwargs = {"encoding" : encoding}
+                kwargs = {"encoding": encoding}
                 mode = "r"
             f = open(cpath, mode, **kwargs)
             return f
