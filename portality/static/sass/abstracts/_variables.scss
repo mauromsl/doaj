@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Base URL for static content
+$static: "/static/";
+$images: $static + "images/";
+
+$icon-picture: $images + "picture.png";
+$icon-video: $images + "video.png";
+$icon-book: $images + "book.png";
+$icon-series: $images + "series.png";
