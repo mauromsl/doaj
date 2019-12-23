@@ -161,7 +161,7 @@ $.extend(true, doaj, {
                 edges.newRefiningANDTermSelector({
                     id: "article_publisher",
                     category: "facet",
-                    field: "bibjson.journal.publisher",
+                    field: "bibjson.journal.publisher.exact",
                     display: "Article: Publisher",
                     deactivateThreshold: 1,
                     renderer: edges.bs3.newRefiningANDTermSelectorRenderer({
