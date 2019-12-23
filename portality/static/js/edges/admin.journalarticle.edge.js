@@ -145,10 +145,24 @@ $.extend(true, doaj, {
                     })
                 }),
                 edges.newRefiningANDTermSelector({
-                    id: "publisher",
+                    id: "journal_publisher",
                     category: "facet",
-                    field: "index.publisher.exact",
-                    display: "Publisher",
+                    field: "bibjson.publisher.exact",
+                    display: "Journal: Publisher",
+                    deactivateThreshold: 1,
+                    renderer: edges.bs3.newRefiningANDTermSelectorRenderer({
+                        controls: true,
+                        open: false,
+                        togglable: true,
+                        countFormat: countFormat,
+                        hideInactive: true
+                    })
+                }),
+                edges.newRefiningANDTermSelector({
+                    id: "article_publisher",
+                    category: "facet",
+                    field: "bibjson.journal.publisher",
+                    display: "Article: Publisher",
                     deactivateThreshold: 1,
                     renderer: edges.bs3.newRefiningANDTermSelectorRenderer({
                         controls: true,
@@ -296,7 +310,8 @@ $.extend(true, doaj, {
                         {'display':'DOI', 'field' : 'bibjson.identifier.id'},
                         {'display':'Country of publisher','field':'index.country'},
                         {'display':'Journal Language','field':'index.language'},
-                        {'display':'Publisher','field':'index.publisher'},
+                        {'display':'Journal: Publisher','field':'bibjson.publisher'},
+                        {'display':'Article: Publisher','field':'bibjson.journal.publisher'},
 
                         {'display':'Article: Abstract','field':'bibjson.abstract'},
                         {'display':'Article: Author','field':'bibjson.author.name'},
@@ -548,7 +563,8 @@ $.extend(true, doaj, {
                         "_type": "Showing",
                         "admin.in_doaj" : "In DOAJ?",
                         "index.language.exact" : "Journal Language",
-                        "index.publisher.exact" : "Publisher",
+                        "bibjson.publisher.exact" : "Journal: Publisher",
+                        "bibjson.journal.publisher" : "Article: Publisher",
                         "bibjson.provider.exact" : "Platform, Host, Aggregator",
                         "index.classification.exact" : "Classification",
                         "index.subject.exact" : "Subject",
