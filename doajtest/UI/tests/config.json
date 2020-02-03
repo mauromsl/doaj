@@ -1,4 +1,6 @@
 {
   "browser": "chrome",
-  "wait_time": 10
+  "wait_time": 10,
+  "chrome_driver_binary": "/home/aga/Work/doajenv/bin/chromedriver",
+  "firefox_driver_binary": "/home/aga/Work/doajenv/bin/geckodriver"
 }

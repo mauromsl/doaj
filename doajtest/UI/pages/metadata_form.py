@@ -50,7 +50,7 @@ class PublisherMetadataForm:
 
     def count_author_fields(self):
         authors_fields = self.browser.find_elements(*self.SEARCH_AUTHOR_FIELDS)
-        return len(authors_fields) // 2
+        return len(authors_fields) // 3
 
     def add_author_field(self):
         add_author_btn = self.browser.find_element(*self.SEARCH_ADD_AUTHOR_BUTTON)
@@ -61,6 +61,10 @@ class PublisherMetadataForm:
         author_name_input.send_keys(author["name"])
         author_aff_input = self.browser.find_element_by_id("authors-0-affiliation")
         author_aff_input.send_keys(author["affiliation"])
+        if author["orcid_id"] is not None:
+            author_aff_input = self.browser.find_element_by_id("authors-0-orcid_id")
+            author_aff_input.send_keys(author["orcid_id"])
+
 
     def add_url(self, fulltext):
         fulltext_input = self.browser.find_element_by_id("fulltext")
@@ -76,8 +80,7 @@ class PublisherMetadataForm:
         issn_dropdown = self._open_issn_dropdown()
         options_elements = issn_dropdown.find_elements_by_xpath("//ul[contains(@id,'select2-results')]//li")
         options = [x.text for x in options_elements]
-        issns.append("Select an ISSN")
-        return len(options) == len(issns) and sorted(options) == sorted(issns)
+        return set(issns).issubset(set(options))
 
     def choose_pissn(self, pissn):
         issn_dropdown = self._open_issn_dropdown()

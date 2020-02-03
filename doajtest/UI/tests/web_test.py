@@ -1,5 +1,5 @@
 import pytest
-from selenium.webdriver import Chrome
+from selenium import webdriver
 
 from doajtest.UI.pages.login_page import DoajLoginPage
 from doajtest.UI.pages.main_page import DoajMainPage
@@ -7,8 +7,8 @@ from doajtest.UI.pages.metadata_form import PublisherMetadataForm
 from doajtest.UI.pages.public_search_results import PublicSearchResults
 
 @pytest.fixture
-def browser():
-    driver = Chrome()
+def browser(config):
+    driver = webdriver.Chrome()
     driver.implicitly_wait(10)
     yield driver
     driver.quit()
@@ -29,9 +29,9 @@ def test_basic_search(browser):
 
 def test_metadata_form(browser):
     TITLE = "New Article"
-    AUTHOR = {"name": "Aga Domanska", "affiliation" : "CL University"}
+    AUTHOR = {"name": "Aga Domanska", "affiliation" : "CL University", "orcid_id" : "https://orcid.org/0000-0001-1234-1234"}
     FULLTEXT_URL = "https://www.example.com"
-    ACCOUNT = {"username" : "Aga", "password" : "password", "issns" : ["1234-5678", "9876-5432"]}
+    ACCOUNT = {"username" : "aga", "password" : "password", "issns" : ["1111-2222", "3333-4444"]}
 
     login_page = DoajLoginPage(browser)
     login_page.load()
@@ -51,12 +51,13 @@ def test_metadata_form(browser):
     assert "invalid_url" in errors
     assert "no_pissn_or_eissn" in errors
 
-    assert form_page.count_author_fields() == 3
-    form_page.remove_author()
-    assert form_page.count_author_fields() == 2
+    assert form_page.count_author_fields() == 1
 
     form_page.add_author_field()
-    assert form_page.count_author_fields() == 3
+    assert form_page.count_author_fields() == 2
+
+    form_page.remove_author()
+    assert form_page.count_author_fields() == 1
 
     form_page.add_author(AUTHOR)
     form_page.add_url(FULLTEXT_URL)
